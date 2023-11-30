@@ -38,7 +38,7 @@ api = Api(app)
 #     return df, df_CTUN, df_CMD, df_waypoints
 
 def extract_bindata(bin_file):
-    mavlogdump_path = r"C:\Users\nithi\AppData\Local\Programs\Python\Python312\Scripts\__pycache__\mavlogdump.cpython-312.pyc"
+    mavlogdump_path = "site-packages/pymavlink/tools/mavlogdump.py"
     csv_file = 'temp.csv'
     temp_bin_file = 'temp.bin'
     with open(bin_file, 'rb') as f:
