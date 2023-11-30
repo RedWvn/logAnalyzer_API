@@ -7,7 +7,10 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip setuptools wheel
+RUN pip install libxml2-dev
+RUN pip install libxslt-dev
+
 
 # install the requirements
 COPY requirements.txt /app
