@@ -7,6 +7,8 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+RUN pip install --upgrade pip
+
 # install the requirements
 COPY requirements.txt /app
 RUN --mount=type=cache,target=/root/.cache/pip \
