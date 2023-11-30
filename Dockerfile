@@ -15,7 +15,7 @@ RUN pip install libxslt-dev
 # install the requirements
 COPY requirements.txt /app
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip3 install -r requirements.txt
+    pip install -r requirements.txt
 
 COPY . .
 
